@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+#grids-container {
+  align-self: center;
+  display: flex;
+}
+
+.ships-title {
+  text-align: center;
+}
+.board-title {
+  text-align: center;
+}
+.container {
+  height: 600px;
+  width: 500px;
+}
+
+.upper {
+  width: 500px;
+  height: 50px;
+  background-color: rosybrown;
+  display: flex;
+}
+
+.under {
+  display: flex;
+}
+
+.right {
+  width: 50px;
+  height: 450px;
+}
+
+.matrix {
+  height: 450px;
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.matrix div {
+  border: 1px solid black;
+  height: 48px;
+  width: 48px;
+}
+
+.square {
+  border: 1px solid black;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#turn {
+  text-align: center;
+}
+
+.displays {
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+}
+
+.ships-display-container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#rotate {
+  width: 8rem;
+  margin: 10px;
+  align-self: center;
+}
+
+#start {
+  font-size: 25px;
+  width: 10rem;
+  margin: 10px;
+  margin-top: 20px;
+  align-self: center;
+}
+
+#restart {
+  display: none;
+  font-size: 25px;
+  width: 10rem;
+  margin: 10px;
+  margin-top: 20px;
+  align-self: center;
+}
+
+#fire {
+  width: 10rem;
+  margin: 10px;
+  margin-top: 20px;
+  align-self: center;
+}
+
+#show-ships {
+  width: 10rem;
+  margin: 10px;
+  margin-top: 20px;
+  align-self: center;
+}
+
+.ships-display {
+  width: 375px;
+  height: 310px;
+}
+
+.ships-display div {
+  cursor: grab;
+}
+
+.small-ship-container {
+  width: 96px;
+  height: 48px;
+  background-color: black;
+  margin: 10px;
+  display: flex;
+  border: 1px solid black;
+}
+
+.small-ship-container-v {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48px;
+  height: 96px;
+  background-color: black;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.medium-ship-container-0,
+.medium-ship-container-1 {
+  width: 144px;
+  height: 48px;
+  background-color: black;
+  margin: 10px;
+  display: flex;
+  border: 1px solid black;
+}
+
+.medium-ship-container-0-v,
+.medium-ship-container-1-v {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48px;
+  height: 144px;
+  background-color: black;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.big-ship-container-0,
+.big-ship-container-1 {
+  width: 192px;
+  height: 48px;
+  background-color: black;
+  margin: 10px;
+  display: flex;
+  border: 1px solid black;
+}
+
+.big-ship-container-0-v,
+.big-ship-container-1-v {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48px;
+  height: 192px;
+  background-color: black;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.ship div {
+  width: 48px;
+  height: 48px;
+}
+
+.taken {
+  background-color: rgb(80, 193, 212);
+}
+
+.miss {
+  background-color: gray;
+}
+
+.pc-taken {
+  background-color: none;
+}
+
+.hit {
+  background-color: red;
+}
